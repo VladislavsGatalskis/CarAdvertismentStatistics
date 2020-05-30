@@ -1,0 +1,1060 @@
+<!doctype html><!-- start coded_template: id:5871566911 path:generated_layouts/5871566907.html --><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-us" > <![endif]--><!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en-us" >        <![endif]--><!--[if IE 8]>    <html class="no-js lt-ie9" lang="en-us" >               <![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en-us"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Scrapinghub">
+    <meta name="description" content="Learn about web data extraction from the experts. 10+ years web scraping veterans share their knowledge.">
+    <meta name="generator" content="HubSpot">
+    <title>THE SCRAPINGHUB BLOG</title>
+    <link rel="shortcut icon" href="https://blog.scrapinghub.com/hubfs/favicon.png">
+    
+
+    <script src="/hs/hsstatic/jquery-libs/static-1.1/jquery/jquery-1.7.1.js"></script>
+<script>hsjQuery = window['jQuery'];</script>
+    <meta property="og:description" content="Learn about web data extraction from the experts. 10+ years web scraping veterans share their knowledge.">
+    <meta property="og:title" content="THE SCRAPINGHUB BLOG">
+    <meta name="twitter:description" content="Learn about web data extraction from the experts. 10+ years web scraping veterans share their knowledge.">
+    <meta name="twitter:title" content="THE SCRAPINGHUB BLOG">
+
+
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="/hs/hsstatic/AsyncSupport/static-1.70/sass/comments_listing_asset.css">
+<link rel="stylesheet" href="https://blog.scrapinghub.com/hs-fs/hub/4367560/hub_generated/module_assets/1529040928565/module_5879203519.min.css">
+<link rel="stylesheet" href="/hs/hsstatic/AsyncSupport/static-1.70/sass/rss_post_listing.css">
+    
+
+    
+    
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TK3JGJ6');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Hotjar Tracking Code for https://info.scrapinghub.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1018252,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<meta property="og:type" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="blog.scrapinghub.com">
+<link rel="alternate" type="application/rss+xml" href="https://blog.scrapinghub.com/rss.xml">
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+    lang: en_US
+</script>
+
+<meta http-equiv="content-language" content="en-us">
+<link rel="stylesheet" href="//cdn2.hubspot.net/hub/-1/hub_generated/template_assets/1495141902003/hubspot_default/shared/responsive/layout.min.css">
+
+
+<link rel="stylesheet" href="https://blog.scrapinghub.com/hs-fs/hub/4367560/hub_generated/template_assets/5871566834/1581685413935/Scraping_Hub_June2018_Theme/Coded_Files/Scraping_Hub_June2018-style.css">
+
+<link rel="prev" href="https://blog.scrapinghub.com/page/1">
+<link rel="next" href="https://blog.scrapinghub.com/page/3">
+    <!-- Hotjar Tracking Code for blog.scrapinghub.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:306472,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+    
+
+</head>
+<body class="blog   hs-blog-id-5623735666 hs-blog-listing" style="">
+    <div class="header-container-wrapper">
+    <div class="header-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<!-- start coded_template: id:5874960760 path:generated_global_groups/5874960759.html -->
+<div class="" data-global-widget-path="generated_global_groups/5874960759.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell custom-blog-header" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1528948931807107" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="blog-title">
+  <a href="https://blog.scrapinghub.com">
+  	<h1>THE SCRAPINGHUB BLOG</h1>
+    <h2 class="site-description">Turn Web Content Into Useful Data</h2>
+  </a>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div><!-- end coded_template: id:5874960760 path:generated_global_groups/5874960759.html -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end header -->
+</div><!--end header wrapper -->
+
+<div class="body-container-wrapper">
+    <div class="body-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center content-wrapper" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1529045966171204" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+</div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div class="span9 widget-span widget-type-cell blog-content" style="" data-widget-type="cell" data-x="0" data-w="9">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1523032069834331" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-blog_content" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+   <div class="blog-section">
+<div class="blog-listing-wrapper cell-wrapper">
+<div class="blog-section">
+<div class="blog-listing-wrapper cell-wrapper">
+<div class="post-listing">
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/looking-back-at-2019" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/Looking-Back-2019-Blog-v1.gif?width=830&amp;name=Looking-Back-2019-Blog-v1.gif" class="hs-featured-image" alt="">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/looking-back-at-2019">Looking Back at 2019</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/looking-back-at-2019">January 30, 2020 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/attila-tóth">Attila Tóth</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/looking-back-at-2019#comments-listing">0 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p>2019 was an exciting year for Scrapinghub. We created things we have never created before and did things nobody in our industry had ever done before. Let’s revisit what happened in 2019!</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/looking-back-at-2019">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/how-to-use-a-proxy-in-puppeteer" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/Puppeteer-Proxy-Blog.gif?width=830&amp;name=Puppeteer-Proxy-Blog.gif" class="hs-featured-image" alt="">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/how-to-use-a-proxy-in-puppeteer">How to use a proxy in Puppeteer</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/how-to-use-a-proxy-in-puppeteer">January 23, 2020 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/attila-tóth">Attila Tóth</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/how-to-use-a-proxy-in-puppeteer#comments-listing">2 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p><span style="color: #990100;"><a href="https://pptr.dev/" target="_blank" rel="noopener" style="color: #990100;">Puppeteer</a></span> is a high-level API for headless chrome. It’s one of the most popular tools to use for web automation or web scraping in Node.js. In web scraping, many developers use it to handle javascript rendering and web data extraction. In this article, we are going to cover how to set up a proxy in Puppeteer and what your options are if you want to rotate proxies.</p> 
+<p>...</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/how-to-use-a-proxy-in-puppeteer">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/how-to-leverage-alternative-data-in-asset-management">How to leverage alternative data in asset management</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/how-to-leverage-alternative-data-in-asset-management">January 09, 2020 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/marie-moynihan">Marie Moynihan</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/how-to-leverage-alternative-data-in-asset-management#comments-listing">0 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p>Whether you are managing a hedge fund trying to find innovative sources of alpha or are an analyst looking to future proof your company’s financial investments, as big data continues to disrupt the investment research landscape, getting on top of these alternative datasets as early as possible is the key to capturing the immense alpha left in this data.</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/how-to-leverage-alternative-data-in-asset-management">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/building-blocks-of-unstoppable-web-scraping-infrastructure" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/Building-Blocks-Web-scraping-Dec-2019-hackernews-v2.gif?width=830&amp;name=Building-Blocks-Web-scraping-Dec-2019-hackernews-v2.gif" class="hs-featured-image" alt="Building-Blocks-Web-scraping-Dec-2019-hackernews-v2">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/building-blocks-of-unstoppable-web-scraping-infrastructure">Building Blocks of an Unstoppable Web Scraping Infrastructure</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/building-blocks-of-unstoppable-web-scraping-infrastructure">December 19, 2019 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/attila-tóth">Attila Tóth</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/building-blocks-of-unstoppable-web-scraping-infrastructure#comments-listing">2 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p>More and more businesses leverage the power of web scraping. Extracting data from the web is becoming popular. But it doesn't mean that the technical challenges are gone. Building a sustainable web scraping infrastructure takes expertise and experience. Here, at <span style="color: #990100;"><a href="https://scrapinghub.com/?utm_campaign=DES&amp;utm_activity=BLO&amp;utm_medium=ORG&amp;utm_source=HUB&amp;utm_content=BLP&amp;utm_primary=DTS&amp;utm_secondary=CRA&amp;utm_goal=SIN" target="_blank" rel="noopener" style="color: #990100;">Scrapinghub</a></span> we scrape 9 billion pages per month. In this article, we are going to summarize what the essential elements of web...</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/building-blocks-of-unstoppable-web-scraping-infrastructure">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/backconnect-proxy" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/Backconnect-proxy-what-are-they.gif?width=830&amp;name=Backconnect-proxy-what-are-they.gif" class="hs-featured-image" alt="Backconnect-proxy-what-are-they">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/backconnect-proxy">Backconnect Proxy: Explanation &amp; Comparison To Other Proxies</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/backconnect-proxy">December 10, 2019 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/attila-tóth">Attila Tóth</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/backconnect-proxy#comments-listing">1 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p>Scaling up your web scraping project is not an easy task. Adding proxies is one of the first actions you will need to take. You will need to manage a healthy proxy pool to avoid bans. There are a lot of proxy services/providers, each having a whole host of different types of proxies. In this blog post, you are going to learn how backconnect proxies work and when you should use them.</p> 
+<p>...</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/backconnect-proxy">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/4-sectors-that-benefited-most-from-business-intelligence-software" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/Scrapinghub%20blog%20post.png?width=830&amp;name=Scrapinghub%20blog%20post.png" class="hs-featured-image" alt="">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/4-sectors-that-benefited-most-from-business-intelligence-software">4 Sectors That Benefited Most from Business Intelligence Software</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/4-sectors-that-benefited-most-from-business-intelligence-software">December 04, 2019 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/louie-andre">Louie Andre</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/4-sectors-that-benefited-most-from-business-intelligence-software#comments-listing">0 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p>Data moves around the marketplace. It can be sourced internally or externally and collected from vendors, manufacturers, retailers, wholesalers, consumers, and other players in the marketplace. This data is then processed and used by businesses in making insights and decisions regarding new business ventures, product ideas, conflict resolution, and process improvement.</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/4-sectors-that-benefited-most-from-business-intelligence-software">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/price-scraping-best-free-tool-to-scrape-prices" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/price-scraping-data-extraction-monitoring-v1-1.gif?width=830&amp;name=price-scraping-data-extraction-monitoring-v1-1.gif" class="hs-featured-image" alt="price-scraping-data-extraction-monitoring-v1-1">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/price-scraping-best-free-tool-to-scrape-prices">Price Scraping: The Best Free Tool To Scrape Prices</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/price-scraping-best-free-tool-to-scrape-prices">November 26, 2019 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/attila-tóth">Attila Tóth</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/price-scraping-best-free-tool-to-scrape-prices#comments-listing">0 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p>Price scraping is something that you need to do if you want to extract pricing data from websites. It might look easy and just a minor technical detail that needs to be handled but in reality, if you don’t know the best way to get those price values from the HTMLs, it can be a headache over time.</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/price-scraping-best-free-tool-to-scrape-prices">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/how-to-use-crawlera-with-scrapy" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/Crawlera-and-Scrapy-Blog-Nov-2019-v1.gif?width=830&amp;name=Crawlera-and-Scrapy-Blog-Nov-2019-v1.gif" class="hs-featured-image" alt="Crawlera-and-Scrapy-Blog-Nov-2019-v1">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/how-to-use-crawlera-with-scrapy">How to use Crawlera with Scrapy</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/how-to-use-crawlera-with-scrapy">November 14, 2019 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/attila-tóth">Attila Tóth</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/how-to-use-crawlera-with-scrapy#comments-listing">0 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p><span style="color: #444444;">Crawlera is</span> a <span style="color: #990100;"><a href="https://scrapinghub.com/crawlera?utm_campaign=CSR&amp;utm_activity=BLO&amp;utm_medium=ORG&amp;utm_source=HUB&amp;utm_content=BLP&amp;utm_primary=CRA&amp;utm_goal=SIN" rel="noopener" target="_blank" style="color: #990100;">proxy service</a></span>, specifically designed for web scraping. In this article, you are going to learn how to use Crawlera inside your Scrapy spider.</p> 
+<p><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-fdd2377b-45f9-4f83-a56a-d064b9e03216"><span class="hs-cta-node hs-cta-fdd2377b-45f9-4f83-a56a-d064b9e03216" id="hs-cta-fdd2377b-45f9-4f83-a56a-d064b9e03216"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4367560/fdd2377b-45f9-4f83-a56a-d064b9e03216" target="_blank"><img class="hs-cta-img" id="hs-cta-img-fdd2377b-45f9-4f83-a56a-d064b9e03216" style="border-width:0px;margin: 0 auto; display: block; margin-top: 20px; margin-bottom: 20px" src="https://no-cache.hubspot.com/cta/default/4367560/fdd2377b-45f9-4f83-a56a-d064b9e03216.png" alt="TRY CRAWLERA FOR FREE" align="middle"></a></span><script charset="utf-8" src="/hs/cta/cta/current.js"></script><script type="text/javascript"> hbspt.cta._relativeUrls=true;hbspt.cta.load(4367560, 'fdd2377b-45f9-4f83-a56a-d064b9e03216', {}); </script></span><!-- end HubSpot Call-to-Action Code --></p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/how-to-use-crawlera-with-scrapy">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/scrapy-matplotlib-and-mysql-real-estate-data-analysis" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/Real-Estate-Data-Extraction---Nov-2019-v1.gif?width=830&amp;name=Real-Estate-Data-Extraction---Nov-2019-v1.gif" class="hs-featured-image" alt="Real-Estate-Data-Extraction---Nov-2019-v1">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/scrapy-matplotlib-and-mysql-real-estate-data-analysis">Scrapy, Matplotlib and MySQL: Real Estate Data Analysis</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/scrapy-matplotlib-and-mysql-real-estate-data-analysis">November 07, 2019 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/attila-tóth">Attila Tóth</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/scrapy-matplotlib-and-mysql-real-estate-data-analysis#comments-listing">2 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p>In today’s article we will extract real estate listings from one of the biggest real estate sites and then analyze the data. Similar to our previous <a href="/price-intelligence-with-python-scrapy-sql-pandas?utm_campaign=SMR&amp;utm_activity=BLO&amp;utm_medium=ORG&amp;utm_source=HUB&amp;utm_content=BLP&amp;utm_primary=DTS&amp;utm_goal=RCO" rel="noopener" target="_blank"><span style="color: #cc0201;">web data analysis blogpost</span></a>, I will show you a simple way to extract web data with python and then perform descriptive analysis on the dataset.</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/scrapy-matplotlib-and-mysql-real-estate-data-analysis">Read More</a>
+</div>
+</div>
+</div>
+<div class="post-item">
+<div class="hs-featured-image-wrapper">
+<a href="https://blog.scrapinghub.com/web-scraping-questions-answers-part-2" title="" class="hs-featured-image-link">
+<img src="https://cdn2.hubspot.net/hub/4367560/hubfs/Extract-Summit-Slido-Question-Answer-Blog---Oct-2019-v1-1.png?width=830&amp;name=Extract-Summit-Slido-Question-Answer-Blog---Oct-2019-v1-1.png" class="hs-featured-image" alt="Extract-Summit-Slido-Question-Answer-Blog---Oct-2019-v1-1">
+</a>
+</div>
+<div class="post-header">
+<h2><a href="https://blog.scrapinghub.com/web-scraping-questions-answers-part-2">Web Scraping Questions &amp; Answers Part II</a></h2>
+<div class="byline">
+<span class="date">
+<i class="fa fa-calendar-o"></i>
+<a href="https://blog.scrapinghub.com/web-scraping-questions-answers-part-2">October 17, 2019 </a>
+</span>
+<span class="author">
+<i class="fa fa-user"></i>
+<a href="https://blog.scrapinghub.com/author/attila-tóth">Attila Tóth</a>	
+</span>
+<span class="custom_listing_comments">
+<i class="fa fa-comments-o"></i>
+<a href="https://blog.scrapinghub.com/web-scraping-questions-answers-part-2#comments-listing">0 Comment</a>
+</span>
+</div>
+</div>
+<div class="post-content">
+<p><a href="/web-scraping-questions-answers-part-1?utm_campaign=EXS&amp;utm_activity=BLO&amp;utm_medium=ORG&amp;utm_source=HUB&amp;utm_content=BLP&amp;utm_primary=EXS&amp;utm_goal=SIN" rel="noopener" target="_blank"><span style="color: #ff9902;">In our article last week</span></a>, we answered some of the best questions we got during <span style="color: #ff9902;"><a href="http://extractsummit.io/?utm_campaign=EXS&amp;utm_activity=BLO&amp;utm_medium=ORG&amp;utm_source=HUB&amp;utm_content=BLP&amp;utm_primary=EXS&amp;utm_goal=SIN" rel="noopener" target="_blank" style="color: #ff9902;">Extract Summit</a></span>. In today’s post we share with you the second part of this series. We are covering questions on Web Scraping Infrastructure and How Machine Learning can be used in Web Scraping.</p>
+<div class="read-more">
+<a class="more-link" href="https://blog.scrapinghub.com/web-scraping-questions-answers-part-2">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blog-pagination">
+<a class="previous-posts-link" href="https://blog.scrapinghub.com/page/1"><i class="fa fa-angle-double-left"></i> NEWER POSTS</a>
+<a class="next-posts-link" href="https://blog.scrapinghub.com/page/3">OLDER POST<i class="fa fa-angle-double-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-5 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget comment-form" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1523032063950328" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-blog_comments" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_1523032063950328_blog_comments" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_comments" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_comments">
+</span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+<div class="span3 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="9" data-w="3">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-6 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell blog-sidebar" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-7 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1577809707375810" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+	
+
+ 
+
+	<span id="hs_cos_wrapper_module_1577809707375810_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="form"><h3 id="hs_cos_wrapper_module_1577809707375810_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text">Keep up to date with web scraping  and data tips...</h3>
+
+<div id="hs_form_target_module_1577809707375810"></div>
+
+
+
+
+
+
+
+
+
+</span>
+
+</div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-8 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget custom-sidebar-logo" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1528951118047119" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_1528951118047119_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h2 style="text-align: center;"><a href="https://blog.scrapinghub.com/building-blocks-of-unstoppable-web-scraping-infrastructure" rel=" noopener"><img src="https://blog.scrapinghub.com/hs-fs/hubfs/Email%20Images/Guide-to-without-getting-blocked-blog-Feb-2020-email.gif?width=223&amp;name=Guide-to-without-getting-blocked-blog-Feb-2020-email.gif" alt="Guide-to-without-getting-blocked-blog-Feb-2020-email" width="223" style="width: 223px;" srcset="https://blog.scrapinghub.com/hs-fs/hubfs/Email%20Images/Guide-to-without-getting-blocked-blog-Feb-2020-email.gif?width=112&amp;name=Guide-to-without-getting-blocked-blog-Feb-2020-email.gif 112w, https://blog.scrapinghub.com/hs-fs/hubfs/Email%20Images/Guide-to-without-getting-blocked-blog-Feb-2020-email.gif?width=223&amp;name=Guide-to-without-getting-blocked-blog-Feb-2020-email.gif 223w, https://blog.scrapinghub.com/hs-fs/hubfs/Email%20Images/Guide-to-without-getting-blocked-blog-Feb-2020-email.gif?width=335&amp;name=Guide-to-without-getting-blocked-blog-Feb-2020-email.gif 335w, https://blog.scrapinghub.com/hs-fs/hubfs/Email%20Images/Guide-to-without-getting-blocked-blog-Feb-2020-email.gif?width=446&amp;name=Guide-to-without-getting-blocked-blog-Feb-2020-email.gif 446w, https://blog.scrapinghub.com/hs-fs/hubfs/Email%20Images/Guide-to-without-getting-blocked-blog-Feb-2020-email.gif?width=558&amp;name=Guide-to-without-getting-blocked-blog-Feb-2020-email.gif 558w, https://blog.scrapinghub.com/hs-fs/hubfs/Email%20Images/Guide-to-without-getting-blocked-blog-Feb-2020-email.gif?width=669&amp;name=Guide-to-without-getting-blocked-blog-Feb-2020-email.gif 669w" sizes="(max-width: 223px) 100vw, 223px"></a><br><span style="font-size: 20px;">Story of the Month</span></h2>
+<h3 style="text-align: center;"><a href="https://blog.scrapinghub.com/how-to-scrape-the-web-without-getting-blocked" rel=" noopener"><span style="font-size: 20px;">How to scrape the web without getting blocked</span></a></h3>
+<p style="font-size: 14px; text-align: center;"><span>Getting data from publicly available websites should not be a problem. In reality though, it’s not that easy.&nbsp; We can make it easy.</span></p></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-9 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget custom-blog-search" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1529040135108166" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="hs-search-field"> 
+    <div class="hs-search-field__bar"> 
+      <form action="/hs-search-results">
+        <input type="search" class="hs-search-field__input" name="term" autocomplete="off" placeholder="Search ...">
+        <input type="submit" class="hs-search-field__submit hs-button" name="Submit" autocomplete="off" value="">
+        
+        
+      </form>
+    </div>
+    <ul class="hs-search-field__suggestions"></ul>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-10 ">
+<div class="row-fluid ">
+<div>
+  
+<h3>
+  Crawl web data at scale without Bottlenecks or slowdowns.
+</h3>
+  
+<div class="span12 widget-span widget-type-custom_widget " style="background-color: #eceff1;" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_15778108177461171" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-cta" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_15778108177461171_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_cta" style="" data-hs-cos-general-type="widget" data-hs-cos-type="cta"><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-239861f7-e6e5-450e-ae54-526d0d12ddb0"><span class="hs-cta-node hs-cta-239861f7-e6e5-450e-ae54-526d0d12ddb0" id="hs-cta-239861f7-e6e5-450e-ae54-526d0d12ddb0"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4367560/239861f7-e6e5-450e-ae54-526d0d12ddb0" target="_blank"><img class="hs-cta-img" id="hs-cta-img-239861f7-e6e5-450e-ae54-526d0d12ddb0" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/4367560/239861f7-e6e5-450e-ae54-526d0d12ddb0.png" alt="Start your Free Trial"></a></span><script charset="utf-8" src="/hs/cta/cta/current.js"></script><script type="text/javascript"> hbspt.cta._relativeUrls=true;hbspt.cta.load(4367560, '239861f7-e6e5-450e-ae54-526d0d12ddb0', {}); </script></span><!-- end HubSpot Call-to-Action Code --></span></div>
+
+</div><!--end widget-span -->
+           
+  </div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-11 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1546532078518156" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-follow_me" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+	<h3>Follow Us</h3>
+
+
+<div>
+  <a href="https://www.linkedin.com/company/2450827" target="_blank" class="fm_button fm_linkedin" style="text-decoration: none"><span style="background-image:url('https://static.hsappstatic.net/cms-default-modules/static-1.131/img/linkedin_legacy_color.png'); background-size: 100%; width: 32px; height: 32px; display: inline-block; cursor: pointer;"></span></a><a href="https://twitter.com/ScrapingHub" target="_blank" class="fm_button fm_twitter" style="text-decoration: none"><span style="background-image:url('https://static.hsappstatic.net/cms-default-modules/static-1.131/img/twitter_legacy_color.png'); background-size: 100%; width: 32px; height: 32px; display: inline-block; cursor: pointer;"></span></a><a href="https://www.facebook.com/104940802978089" target="_blank" class="fm_button fm_facebook" style="text-decoration: none"><span style="background-image:url('https://static.hsappstatic.net/cms-default-modules/static-1.131/img/facebook_legacy_color.png'); background-size: 100%; width: 32px; height: 32px; display: inline-block; cursor: pointer;"></span></a>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-12 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1528953196942448" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="pop-post">
+  <h3>Popular Posts</h3>
+  
+  
+  <div class="post-title"><a href="https://blog.scrapinghub.com/python-requests-proxy">Learn how to configure and utilize proxies with Python Requests module</a></div>
+  
+  <div class="post-title"><a href="https://blog.scrapinghub.com/2016/10/27/an-introduction-to-xpath-with-examples">An Introduction to XPath: How to Get Started</a></div>
+  
+  <div class="post-title"><a href="https://blog.scrapinghub.com/2015/03/02/handling-javascript-in-scrapy-with-splash">Handling JavaScript in Scrapy with Splash</a></div>
+  
+  <div class="post-title"><a href="https://blog.scrapinghub.com/2016/11/24/how-to-build-your-own-price-monitoring-tool">How to Build your own Price Monitoring Tool</a></div>
+  
+  <div class="post-title"><a href="https://blog.scrapinghub.com/2016/08/25/how-to-crawl-the-web-politely-with-scrapy">How to Crawl the Web Politely with Scrapy</a></div>
+  
+</div>
+</div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-13 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1528953380519479" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-post_listing" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+  
+
+
+<span id="hs_cos_wrapper_module_1528953380519479_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_post_listing" style="" data-hs-cos-general-type="widget" data-hs-cos-type="post_listing"><div class="block">
+  <h3>Recent Posts</h3>
+  <div class="widget-module">
+    <ul class="hs-hash-1511735962-1585863602643">
+    </ul>
+  </div>
+</div>
+</span>
+</div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-14 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget custom-sidebar-categories" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1528953215622451" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-post_filter" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+  
+
+
+<span id="hs_cos_wrapper_module_1528953215622451_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_post_filter" style="" data-hs-cos-general-type="widget" data-hs-cos-type="post_filter"><div class="block">
+  <h3>Categories</h3>
+  <div class="widget-module">
+    <ul>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/scrapinghub">Scrapinghub <span class="filter-link-count" dir="ltr">(94)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/scrapy">Scrapy <span class="filter-link-count" dir="ltr">(44)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/web-scraping">Web Scraping <span class="filter-link-count" dir="ltr">(35)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/releases">Releases <span class="filter-link-count" dir="ltr">(29)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/open-source-2">Open source <span class="filter-link-count" dir="ltr">(20)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/scrapy-2">scrapy <span class="filter-link-count" dir="ltr">(19)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/crawlera">Crawlera <span class="filter-link-count" dir="ltr">(15)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/scrapy-cloud">Scrapy Cloud <span class="filter-link-count" dir="ltr">(15)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/web-crawling">web crawling <span class="filter-link-count" dir="ltr">(15)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/data-extraction">data extraction <span class="filter-link-count" dir="ltr">(13)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/proxies">Proxies <span class="filter-link-count" dir="ltr">(9)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/scrapy-tips-from-the-pros">Scrapy Tips from the Pros <span class="filter-link-count" dir="ltr">(9)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/open-source">open source <span class="filter-link-count" dir="ltr">(8)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/products">Products <span class="filter-link-count" dir="ltr">(7)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/tag/web-data">Web Data <span class="filter-link-count" dir="ltr">(7)</span></a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+</span>
+</div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-15 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget custom-sidebar-archive" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1528953289598462" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-post_filter" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+  
+
+
+<span id="hs_cos_wrapper_module_1528953289598462_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_post_filter" style="" data-hs-cos-general-type="widget" data-hs-cos-type="post_filter"><div class="block">
+  <h3>Archives</h3>
+  <div class="widget-module">
+    <ul>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2020/03">March 2020 <span class="filter-link-count" dir="ltr">(6)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2020/02">February 2020 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2020/01">January 2020 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/12">December 2019 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/11">November 2019 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/10">October 2019 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/09">September 2019 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/08">August 2019 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/07">July 2019 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/06">June 2019 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/05">May 2019 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/04">April 2019 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/03">March 2019 <span class="filter-link-count" dir="ltr">(5)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/02">February 2019 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.scrapinghub.com/archive/2019/01">January 2019 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+</span>
+</div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end body -->
+</div><!--end body wrapper -->
+
+<div class="footer-container-wrapper">
+    <div class="footer-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<!-- start coded_template: id:5875016682 path:generated_global_groups/5875016681.html -->
+<div class="" data-global-widget-path="generated_global_groups/5875016681.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell custom-blog-footer" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget custom-blog-copyright" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1528961205191523" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_1528961205191523_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p>© 2019</p></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div><!-- end coded_template: id:5875016682 path:generated_global_groups/5875016681.html -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end footer -->
+</div><!--end footer wrapper -->
+
+    
+<script type="text/javascript" src="/hs/hsstatic/HubspotToolsMenu/static-1.62/js/index.js"></script>
+<script>
+(function () {
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/_hcms/perf', true /*async*/);
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.onreadystatechange = function () {
+                // do nothing.
+            };
+            var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            function populateNetworkInfo(name, connection, info) {
+                if (name in connection) {
+                    info[name] = connection[name];
+                }
+            }
+            var networkInfo = {};
+            if (connection) {
+                ['type', 'effectiveType', 'downlink', 'rtt'].forEach(function(name) {
+                    populateNetworkInfo(name, connection, networkInfo);
+                });
+            }
+            var perfData = {
+                url: location.href,
+                portal: 4367560,
+                content: -1,
+                group: 5623735666,
+                connection: networkInfo,
+                timing: performance.timing
+            };
+            xhr.send(JSON.stringify(perfData));
+        }, 3000);  // Execute this 3 seconds after onload.
+    });
+})();
+</script>
+
+<script src="https://blog.scrapinghub.com/hs-fs/hub/4367560/hub_generated/template_assets/5871566835/1569655267749/Scraping_Hub_June2018_Theme/Coded_Files/Scraping_Hub_June2018-main.js"></script>
+<script>
+if (typeof hsVars !== 'undefined') { hsVars['language'] = 'en-us'; }
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.16/bundles/project.js"></script>
+<script src="/hs/hsstatic/AsyncSupport/static-1.70/js/comment_listing_asset.js"></script>
+<script>
+  function hsOnReadyPopulateCommentsFeed() {
+    var options = {
+      commentsUrl: "https://api.hubapi.com/comments/v3/comments/thread/public?portalId=4367560&offset=0&limit=10000&contentId=0&collectionId=5623735666",
+      maxThreadDepth: 1,
+      showForm: false,
+      
+      target: "hs_form_target_64f98cca-9f37-44d3-a552-5c7df6b25748"
+    };
+    window.hsPopulateCommentsFeed(options);
+  }
+
+  if (document.readyState === "complete" ||
+      (document.readyState !== "loading" && !document.documentElement.doScroll)
+  ) {
+    hsOnReadyPopulateCommentsFeed();
+  } else {
+    document.addEventListener("DOMContentLoaded", hsOnReadyPopulateCommentsFeed);
+  }
+
+</script>
+
+
+    <!--[if lte IE 8]>
+    <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+<script src="/_hcms/forms/v2.js"></script>
+
+    <script>
+        var options = {
+            formsBaseUrl: '/_hcms/forms/',
+            portalId: '4367560',
+            formId: '6c5a16f4-9e9f-4481-aaa2-c7da6421521a',
+            formInstanceId: '493',
+            pageId: '5623735666',
+            
+            
+            
+            
+            
+            
+            inlineMessage: "Thanks for submitting the form.",
+            
+            
+            rawInlineMessage: "Thanks for submitting the form.",
+            
+            
+            hsFormKey: "b0fdb2c1a817d60f9d05838a74854aad",
+            
+            
+            css: '',
+            target: '#hs_form_target_module_1577809707375810',
+            
+            
+            sfdcCampaignId: "7011n000000ni8bAAA",
+            
+            
+            
+            
+            contentType: "listing-page",
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    </script>
+
+<script src="https://blog.scrapinghub.com/hs-fs/hub/4367560/hub_generated/module_assets/1529040928481/module_5879203519.min.js"></script>
+<script src="/hs/hsstatic/AsyncSupport/static-1.70/js/post_listing_asset.js"></script>
+<script>
+  function hsOnReadyPopulateListingFeed_1511735962_1585863602643() {
+    var options = {
+      'id': "1511735962-1585863602643",
+      'listing_url': "/_hcms/postlisting?blogId=5623735666&maxLinks=5&listingType=recent&orderByViews=false&hs-expires=1617399722&hs-version=2&hs-signature=AJ2IBuF48Po8mFnrwcBhhAqAn2XiKL_0rw",
+      'include_featured_image': false
+    };
+    window.hsPopulateListingFeed(options);
+  }
+
+  if (document.readyState === "complete" ||
+      (document.readyState !== "loading" && !document.documentElement.doScroll)
+  ) {
+    hsOnReadyPopulateListingFeed_1511735962_1585863602643();
+  } else {
+    document.addEventListener("DOMContentLoaded", hsOnReadyPopulateListingFeed_1511735962_1585863602643);
+  }
+</script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "listing-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/blog.scrapinghub.com"]);
+_hsq.push(["setPageId", "5623735666"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": null,
+    "legacyPageId": null,
+    "contentFolderId": null,
+    "contentGroupId": 5623735666,
+    "abTestId": null,
+    "languageVariantId": null,
+    "languageCode": null,
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/4367560.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    ticks: 1585863602477,
+    page_id: 0,
+
+    content_group_id: 5623735666,
+    portal_id: 4367560,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "listing-page",
+    category_id: 3,
+    folder_id: 0,
+
+    is_hubspot_user: false
+}
+</script>
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK3JGJ6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="fb-root"></div>
+ <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ 
+    
+    <!-- Generated by the HubSpot Template Builder - template version 1.03 -->
+
+
+<!-- end coded_template: id:5871566911 path:generated_layouts/5871566907.html -->
+</body></html>
