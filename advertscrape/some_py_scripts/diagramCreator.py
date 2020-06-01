@@ -5,7 +5,7 @@ from datetime import date
 today = date.today()
 
 # Saving adverts data to variable 'data'
-with open(f'advertscrape\\adverts_{today}.json',encoding='utf-8') as json_file:
+with open(f'advertscrape/adverts_{today}.json',encoding='utf-8') as json_file:
     data = json.load(json_file)
 
 # 1. the count of cars in advertismets with the particular model year

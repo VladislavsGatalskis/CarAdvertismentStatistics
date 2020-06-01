@@ -38,3 +38,7 @@ adStatus.write("finished")
 adStatus.close()
 
 print('It took', time.time()-start, f'seconds ({(time.time()-start) / 60} minutes) to get all the necassery information.')
+
+# # For automatic diagram creation after the data scraping
+# os.chdir(f"{projectLocation}/CarAdvertismentStatistics/")
+# os.system(f'python {projectLocation}/CarAdvertismentStatistics/advertscrape/some_py_scripts/diagramCreator.py')
