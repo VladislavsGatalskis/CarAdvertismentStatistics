@@ -1,11 +1,15 @@
+import os
 import plotly.graph_objects as go
 import json
 from datetime import date
 
 today = date.today()
 
+scrapyBaseLocation = os.path.dirname(os.path.realpath(__file__))
+print("\nPATH: ", scrapyBaseLocation)
+
 # Saving adverts data to variable 'data'
-with open(f'advertscrape/adverts/adverts_{today}.json',encoding='utf-8') as json_file:
+with open(f'{scrapyBaseLocation}/adverts/adverts_{today}.json',encoding='utf-8') as json_file:
     data = json.load(json_file)
 
 # 1. the count of cars in advertismets with the particular model year
