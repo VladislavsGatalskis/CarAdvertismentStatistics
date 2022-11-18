@@ -25,8 +25,10 @@ class AdvertsSpider(scrapy.Spider):
                 adUrl = "http://www.ss.com" + ad.css('td:nth-child(3) div a').attrib['href']
                 yield scrapy.Request(adUrl, callback=self.parseAd)
 
-        next_page_url = response.css('table:nth-child(5) td div a:last-child').attrib['href']
-        if next_page_url is not None  or  "page" not in next_page_url:
+        # Getting the next page url from "Nākamie" button
+        next_page_url = response.css('form#filter_frm div.td2 a:last-child').attrib['href']
+        
+        if "page" in next_page_url:
             next_page_url = response.urljoin(next_page_url)
             yield scrapy.Request(next_page_url, callback=self.parseSection)
 
