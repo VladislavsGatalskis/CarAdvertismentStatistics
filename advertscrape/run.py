@@ -22,7 +22,7 @@ file.close()
 
 # Changes direction to the folder where ?scrapy.cfg is located? (terminal command line below (os.system..) only executes if in specified dir below)
 os.chdir(f"{scrapyBaseLocation}")
-os.system(f"scrapy crawl adverts_v2 -o adverts/adverts_{today}.json")
+os.system(f"scrapy crawl adverts_v2 -o adverts/adverts_{today}.json --logfile output.log")
 
 # import json file to variable 'data' and sort it
 with open(f'{scrapyBaseLocation}/adverts/adverts_{today}.json', encoding='utf-8') as json_file:

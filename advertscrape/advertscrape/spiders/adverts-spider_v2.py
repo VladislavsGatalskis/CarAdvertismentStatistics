@@ -27,15 +27,16 @@ class AdvertsSpider(scrapy.Spider):
 
         # Getting the next page url from "Nākamie" button
         next_page_url = response.css('form#filter_frm div.td2 a:last-child').attrib['href']
+            # next_page_url CAN BE NULL if page has only 1 page. FIX THIS 
+            # (KeyError: 'href' because no button)
         
         if "page" in next_page_url:
             next_page_url = response.urljoin(next_page_url)
             yield scrapy.Request(next_page_url, callback=self.parseSection)
 
-
     def parseAd(self, response):
         current = {}
-
+        
         make = response.css('div#msg_div_msg table table tr:first-child')
         make = make.css('td:last-child ::text').get()
 
