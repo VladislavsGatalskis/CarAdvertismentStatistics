@@ -70,4 +70,7 @@ class AdvertsSpider(scrapy.Spider):
                     break
 
         current['url'] = response.request.url
+
+        print("AD Parse")
+        
         yield current
