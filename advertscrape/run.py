@@ -44,6 +44,7 @@ adStatus = open(f"{scrapyBaseLocation}/adverts/adverts_{today}_status.txt","w")
 adStatus.write("finished")
 adStatus.close()
 
+print('\n')
 print('It took', time.time()-start, f'seconds ({(time.time()-start) / 60} minutes) to get all the necassery information.')
 
 # # For automatic diagram creation after the data scraping

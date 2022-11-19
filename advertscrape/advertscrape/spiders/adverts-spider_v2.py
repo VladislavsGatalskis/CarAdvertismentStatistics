@@ -6,9 +6,16 @@ class AdvertsSpider(scrapy.Spider):
     start_urls = [
         "https://www.ss.com/transport/cars/"
     ]
+
+    # Spinner 
+    from progress.spinner import Spinner
+    global spinner 
+    spinner = Spinner('Scraping in progress... ')
     
     # PARSING PAGE WITH LINKS OF CAR MAKES
     def parse (self,response):
+        # spinner.next()
+
         # sections: 1. section with all car makes; 2. section with rare cars, exchange and otherCarStuff
         for section in response.css('form table:nth-child(3) td'):
             for el in section.css('h4 a'):
@@ -19,6 +26,8 @@ class AdvertsSpider(scrapy.Spider):
 
     # PARSING EACH CAR MAKE SECTION (+ NEXT PAGES)
     def parseSection (self,response):
+        # spinner.next()
+
         for ad in response.css('form table:nth-child(3) tr:not(:first-child)'):
             if ad.css('td:nth-child(3) div a::attr(href)').get() is not None:
                 adUrl = "http://www.ss.com" + ad.css('td:nth-child(3) div a').attrib['href']
@@ -34,8 +43,12 @@ class AdvertsSpider(scrapy.Spider):
         except KeyError:
             pass
 
+
+
     # PARSING INDIVIDUAL AD
     def parseAd(self, response):
+        spinner.next()
+
         current = {}
         
         make = response.css('div#msg_div_msg table table tr:first-child')
@@ -71,6 +84,4 @@ class AdvertsSpider(scrapy.Spider):
 
         current['url'] = response.request.url
 
-        print("AD Parse")
-        
         yield current
