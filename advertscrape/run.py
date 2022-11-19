@@ -20,9 +20,15 @@ file = open(f"{scrapyBaseLocation}/adverts/adverts_{today}.json","w")
 file.write("")
 file.close()
 
+# If output.log exists, clear the content for new logging (MAYBE CREATE FOLDER WITH logs for every run???)
+file = open(f"{scrapyBaseLocation}/output.log","w")
+file.write("")
+file.close()
+
 # Changes direction to the folder where ?scrapy.cfg is located? (terminal command line below (os.system..) only executes if in specified dir below)
 os.chdir(f"{scrapyBaseLocation}")
 os.system(f"scrapy crawl adverts_v2 -o adverts/adverts_{today}.json --logfile output.log")
+# os.system(f"scrapy crawl adverts_v2 -o adverts/adverts_{today}.json")
 
 # import json file to variable 'data' and sort it
 with open(f'{scrapyBaseLocation}/adverts/adverts_{today}.json', encoding='utf-8') as json_file:

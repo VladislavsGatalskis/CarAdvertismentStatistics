@@ -1,3 +1,4 @@
+from contextlib import suppress
 import scrapy
 
 class AdvertsSpider(scrapy.Spider):
@@ -5,35 +6,35 @@ class AdvertsSpider(scrapy.Spider):
     start_urls = [
         "https://www.ss.com/transport/cars/"
     ]
-
+    
+    # PARSING PAGE WITH LINKS OF CAR MAKES
     def parse (self,response):
+        # sections: 1. section with all car makes; 2. section with rare cars, exchange and otherCarStuff
         for section in response.css('form table:nth-child(3) td'):
             for el in section.css('h4 a'):
                 section_url = el.attrib['href']
-                section_url = response.urljoin(section_url)
+                section_url = response.urljoin(section_url) + 'sell' # /sell - only sell ads (no exchange, rent, or buy)
                 yield scrapy.Request(section_url, callback=self.parseSection)
-            break
+            break # Right now only 1. section is supported
 
+    # PARSING EACH CAR MAKE SECTION (+ NEXT PAGES)
     def parseSection (self,response):
-        isFirst = True
-        for ad in response.css('form table:nth-child(3) tr'):
-            if(isFirst): # skiping first elem which is 'header' tr element
-                isFirst = False
-                continue
+        for ad in response.css('form table:nth-child(3) tr:not(:first-child)'):
             if ad.css('td:nth-child(3) div a::attr(href)').get() is not None:
-                # Parse each url
                 adUrl = "http://www.ss.com" + ad.css('td:nth-child(3) div a').attrib['href']
-                yield scrapy.Request(adUrl, callback=self.parseAd)
+                yield scrapy.Request(adUrl, callback=self.parseAd)  # parsing each ad
 
-        # Getting the next page url from "Nākamie" button
-        next_page_url = response.css('form#filter_frm div.td2 a:last-child').attrib['href']
-            # next_page_url CAN BE NULL if page has only 1 page. FIX THIS 
-            # (KeyError: 'href' because no button)
-        
-        if "page" in next_page_url:
-            next_page_url = response.urljoin(next_page_url)
-            yield scrapy.Request(next_page_url, callback=self.parseSection)
+        # Trying to get next page url (no link if section has only one page; throws "KeyError: 'href'")
+        # (Alternative solution: 'with suppress(KeyError):' instead of 'try-except')
+        try:
+            next_page_url = response.css('form#filter_frm div.td2 a:last-child').attrib['href']
+            if "page" in next_page_url:
+                next_page_url = response.urljoin(next_page_url)
+                yield scrapy.Request(next_page_url, callback=self.parseSection)
+        except KeyError:
+            pass
 
+    # PARSING INDIVIDUAL AD
     def parseAd(self, response):
         current = {}
         
