@@ -2,3 +2,5 @@
 venv/
 venv2/
 output.log
+advertscrape/advertscrape/__pycache__/
+advertscrape/advertscrape/spiders/__pycache__/
